@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Hachi+Maru+Pop&family=IBM+Plex+Mono&family=Montserrat+Alternates&family=Poppins:ital,wght@1,300&family=Source+Code+Pro:ital,wght@0,400;1,300&family=VT323&display=swap");
+$border-color: #293241;
+@import "../../global.scss";
+
+.nameJumpAnimation {
+        @include JumpAnimation;
+}
+
+@mixin mobileView {
+        @media (max-width:768px) {
+                @content
+        }
+}
+
+.timelineContainer {
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        height: max-content !important;
+
+
+        @include mobileView {
+                padding: 1rem 0.5rem;
+        }
+
+        &>* {
+                box-sizing: border-box;
+                font-family: "Source Code Pro", monospace;
+        }
+
+        &> :nth-child(odd) {
+                @include mobileView {
+                        img {
+                                width: 3rem;
+                                right: 0.5rem;
+                        }
+                }
+
+                margin-left: 3rem;
+                border-bottom-right-radius: 3rem;
+                border-top-right-radius: 3rem;
+                // border: thick dashed yellowgreen;
+                padding: 1rem 1rem 1rem 0;
+                z-index: 10;
+
+                @include mobileView {
+                        margin-left: 1.5rem;
+                        border-bottom-right-radius: 1.5rem;
+                        border-top-right-radius: 1.5rem;
+                        padding: 0.5rem 0.5rem 0.5rem 0;
+                }
+
+                .borderConatainer {
+                        padding: 1rem 1rem 1rem 0;
+                        height: 100%;
+                        border: 0.4rem dashed $border-color;
+                        border-top-right-radius: 2rem;
+                        border-bottom-right-radius: 2rem;
+                        border-left: none;
+
+                        @include mobileView {
+                                border: 0.125rem dashed $border-color;
+                                border-bottom-right-radius: 1rem;
+                                border-top-right-radius: 1rem;
+                                padding: 0.5rem 0.5rem 0.5rem 0;
+                                border-left: none;
+                        }
+
+                        .contentContainer {
+                                height: 100%;
+                                border: none;
+                                border-top-right-radius: 1rem;
+                                border-bottom-right-radius: 1rem;
+                                // background-color: white;
+
+
+                                @include mobileView {
+                                        border-top-right-radius: 0.5rem;
+                                        border-bottom-right-radius: 0.5rem;
+                                }
+                        }
+                }
+        }
+
+        &>:nth-child(even) {
+                @include mobileView {
+
+                        img {
+                                width: 3rem;
+                                left: 0.5rem;
+                        }
+                }
+
+                margin: -2.4rem 0;
+                margin-right: 3rem;
+                border-bottom-left-radius: 3rem;
+                border-top-left-radius: 3rem;
+                padding: 1rem 0 1rem 1rem;
+
+                @include mobileView {
+                        margin: -1.125rem 0;
+                        margin-right: 1rem;
+                        border-bottom-left-radius: 1.5rem;
+                        border-top-left-radius: 1.5rem;
+                        padding: 0.5rem 0 0.5rem 0.5rem;
+                }
+
+                // z-index: -1;
+                .borderConatainer {
+                        padding: 1rem 0 1rem 1rem;
+                        height: 100%;
+                        border: 0.4rem dashed $border-color;
+                        border-top-left-radius: 2rem;
+                        border-bottom-left-radius: 2rem;
+                        border-right: none;
+
+                        @include mobileView {
+                                border: 0.125rem dashed $border-color;
+                                padding: 0.5rem 0 0.5rem 0.5rem;
+                                border-top-left-radius: 1rem;
+                                border-bottom-left-radius: 1rem;
+                                border-right: none;
+                        }
+
+                        .contentContainer {
+                                height: 100%;
+                                border: none;
+                                border-top-left-radius: 1rem;
+                                border-bottom-left-radius: 1rem;
+                                // background-color: white;
+                        }
+                }
+        }
+
+        &>*:nth-child(1) {
+                border-top-right-radius: 0;
+                border-top: none;
+                padding-top: 0;
+
+                .borderConatainer {
+                        padding-top: 0;
+                        border-top-right-radius: 0;
+                        border-top: none;
+
+                        .contentContainer {
+                                border-top-right-radius: 0;
+                        }
+                }
+        }
+
+        &>*:last-child {
+                border-bottom-left-radius: 0;
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+
+                .borderConatainer {
+                        padding-bottom: 0;
+                        border-bottom-left-radius: 0;
+                        border-bottom: none;
+
+                        .contentContainer {
+                                border-bottom-left-radius: 0;
+                        }
+                }
+        }
+}

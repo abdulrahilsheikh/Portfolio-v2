@@ -1,0 +1,73 @@
+.isVisible {
+        .container {
+                img {
+                        height: 6rem;
+                        width: 6rem;
+                        position: relative;
+                        margin-bottom: 0.5rem;
+                }
+
+                &>* {
+                        z-index: 2;
+                }
+        }
+
+        &:hover {
+                .background {
+                        -webkit-transform: scale(10);
+                        -ms-transform: scale(10);
+                        transform: scale(10);
+                }
+        }
+
+        .background {
+                height: 128px;
+                width: 128px;
+                background-color: #f9b234;
+                z-index: 1;
+                position: absolute;
+                top: -75px;
+                right: -75px;
+                border-radius: 50%;
+                -webkit-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                transition: all .5s ease;
+        }
+
+        &:nth-child(6n + 1) .background {
+                background-color: #f9b234;
+                text-decoration-color: #f9b234;
+        }
+
+        &:nth-child(6n + 6) .background {
+                background-color: #3ecd5e;
+                text-decoration-color: #3ecd5e;
+        }
+
+        &:nth-child(6n + 2) .background {
+                background-color: #e44002;
+                text-decoration-color: #e44002;
+
+        }
+
+        &:nth-child(6n + 3) .background {
+                background-color: #952aff;
+                text-decoration-color: #952aff;
+        }
+
+        &:nth-child(6n + 4) .background {
+                background-color: #cd3e94;
+                text-decoration-color: #cd3e94;
+        }
+
+        &:nth-child(6n + 5) .background {
+                background-color: #4c49ea;
+                text-decoration-color: #4c49ea;
+        }
+
+        @for $i from 0 through 4 {
+                &:nth-child(4n + #{$i}) {
+                        transition-delay: 2 * $i *100ms;
+                }
+        }
+}

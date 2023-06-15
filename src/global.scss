@@ -1,0 +1,26 @@
+@mixin JumpAnimation {
+        display: inline-block;
+        animation: subtleJump 3s infinite;
+
+        @keyframes subtleJump {
+                50% {
+                        transform: translateY(-15px);
+                }
+        }
+}
+
+
+::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+        background: var(--background);
+}

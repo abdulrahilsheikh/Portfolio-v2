@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "img": "ReactAdminDashboard.png",
+            "title": "React Admin Dashboard",
+            "content": "This is a admin pannel made in React.Js and Tailwind CSS",
+            "tags": [
+                "Tailwind CSS",
+                "React.JS",
+                "React Router Dom "
+            ],
+            "description": "This is a admin pannel made in React.js and Tailwind CSS. The charts used are from Apex Charts. So its an experimental project. The icons Are from Lucid-Ui. Routing is done using React-Router-Dom v6",
+            "linkToSite": "https://abdulrahilsheikh.github.io/React-cms-website-v1/"
+        },
+        {
+            "id": 2,
+            "img": "SamuraiPortfolio.png",
+            "title": "Samurai Style Portfolio",
+            "content": "This is my Creative Portfolio",
+            "tags": [
+                "Tailwind CSS",
+                "React.JS",
+                "React-Three-Fiber "
+            ],
+            "description": "This is my personal portfolio website. Inpired by samurai theme. All the 3d models are implemented with the help of React-Three-Fiber. And for styling Tailwind CSS is used. ",
+            "linkToSite": "https://abdulrahilsheikh.github.io/Portfolio-v1"
+        },
+        {
+            "id": 4,
+            "img": "SamuraiPortfolio.png",
+            "title": "Samurai Style Portfolio",
+            "content": "This is my Creative Portfolio",
+            "tags": [
+                "Tailwind CSS",
+                "React.JS",
+                "React-Three-Fiber "
+            ],
+            "description": "This is my personal portfolio website. Inpired by samurai theme. All the 3d models are implemented with the help of React-Three-Fiber. And for styling Tailwind CSS is used. ",
+            "linkToSite": "https://abdulrahilsheikh.github.io/Portfolio-v1"
+        },
+        {
+            "id": 5,
+            "img": "SamuraiPortfolio.png",
+            "title": "Samurai Style Portfolio",
+            "content": "This is my Creative Portfolio",
+            "tags": [
+                "Tailwind CSS",
+                "React.JS",
+                "React-Three-Fiber "
+            ],
+            "description": "This is my personal portfolio website. Inpired by samurai theme. All the 3d models are implemented with the help of React-Three-Fiber. And for styling Tailwind CSS is used. ",
+            "linkToSite": "https://abdulrahilsheikh.github.io/Portfolio-v1"
+        }
+    ]
+}
